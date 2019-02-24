@@ -37,5 +37,16 @@
     {% if user.hireable %}
       <span title="Hire me" class="d-inline-block f5 rounded-2 text-white bg-green py-1 px-2">Available for hire</span>
     {% endif %}
+
+    <div class="{{ metadata_styles }} {% if site.style == 'dark' %}text-white{% endif %}">
+      <a href="{{ site.baseurl }}{% link pages/about.md %}">
+        About
+      </a>
+    </div>
+    <div class="{{ metadata_styles }} {% if site.style == 'dark' %}text-white{% endif %}">
+      <a href="{{ site.baseurl }}{% link pages/resume.md %}">
+        Resume
+      </a>
+    </div>
   </div>
 {% endif %}
