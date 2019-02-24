@@ -1,26 +1,35 @@
-# Dependencies
-markdown:         redcarpet
-highlighter:      pygments
+layout: sidebar
+style: dark
+repository: heinlinaung/heinlinaung.github.io
 
-# Permalinks
-permalink:        pretty
+plugins:
+  - jekyll-octicons
+  - jekyll-github-metadata
 
-# Setup
-title:            Hyde
-tagline:          'A Jekyll theme'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:              http://hyde.getpoole.com
-baseurl:          /
-plugins:          [jekyll-paginate, jekyll-gist, jekyll-compose]
+permalink: /:year/:month/:day/:title/
 
-author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts"
+    values:
+      layout: "post"
 
-paginate:         5
+topics:
+  - name: CSS
+    web_url: https://github.com/topics/css
+    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/css/css.png
 
-# Custom vars
-version:          2.1.0
+  - name: Web design
 
-github:
-  repo:           https://github.com/poole/hyde
+  - name: Sass
+    web_url: https://github.com/topics/sass
+    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/sass/sass.png
+
+posts:
+  - title: Google
+    url: http://google.com
+
+  - name: Facebook
+    url: http://facebook.com
