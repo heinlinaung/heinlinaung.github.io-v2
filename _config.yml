@@ -1,7 +1,7 @@
 layout: sidebar
 style: dark
 repository: heinlinaung/heinlinaung.github.io
-
+theme: minimal
 plugins:
   - jekyll-octicons
   - jekyll-github-metadata
